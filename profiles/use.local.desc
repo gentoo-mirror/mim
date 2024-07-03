@@ -1,0 +1,132 @@
+# This file is deprecated as per GLEP 56 in favor of metadata.xml.
+# Please add your descriptions to your package's metadata.xml ONLY.
+# * generated automatically using pmaint *
+
+app-arch/libdeflate:gzip - Support the gzip format
+app-arch/libdeflate:test - Build the test programs (requires sys-libs/zlib)
+app-arch/libdeflate:utils - Build the libdeflate-gzip program
+app-arch/libdeflate:zlib - Support the zlib format
+app-benchmarks/glmark2:drm - Enable DRM backend support
+app-benchmarks/glmark2:gles2 - Enable GLES2 support
+dev-lang/zig:llvm - Build with LLVM backend and extensions enabled.
+dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
+dev-libs/imath:large-stack - Enables code to take advantage of large stack support
+dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
+dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
+dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries
+dev-util/nvidia-cuda-toolkit:rdma - Enable infiniband support via sys-cluster/rdma-core
+dev-util/nvidia-cuda-toolkit:sanitizer - Install compute-sanitizer tool
+dev-util/nvidia-cuda-toolkit:vis-profiler - Install the NVIDIA CUDA visual profiler (nvvp)
+dev-vcs/git:blksha1 - Use the new optimized SHA1 implementation
+dev-vcs/git:cgi - Install gitweb too
+dev-vcs/git:curl - Support fetching and pushing (requires webdav too) over http:// and https:// protocols
+dev-vcs/git:gpg - Pull in gnupg for signing -- without gnupg, attempts at signing will fail at runtime!
+dev-vcs/git:highlight - GitWeb support for app-text/highlight
+dev-vcs/git:mediawiki - Support pulling and pushing from MediaWiki
+dev-vcs/git:perforce - Add support for Perforce version control system (requires manual installation of Perforce client)
+dev-vcs/git:safe-directory - Respect the safe.directory setting
+dev-vcs/git:subversion - Include git-svn for dev-vcs/subversion support
+dev-vcs/git:tk - Include the 'gitk' and 'git gui' tools
+dev-vcs/git:webdav - Adds support for push'ing to HTTP/HTTPS repositories via DAV
+gui-apps/wf-recorder:pulseaudio - Enable support for audio capture via PulseAudio
+gui-libs/gtk:broadway - Enable the GDK Broadway backend.
+gui-libs/gtk:cloudproviders - Enable GtkPlacesSidebar to access cloud services
+gui-libs/gtk:colord - Use x11-misc/colord for color management in printing
+gui-libs/gtk:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
+mail-client/aerc:notmuch - Enable support for net-mail/notmuch
+media-gfx/inkscape:cdr - Enable support for CorelDRAW files via media-libs/libcdr
+media-gfx/inkscape:dia - Enable DIA flow chart import via app-office/dia
+media-gfx/inkscape:inkjar - Enable support for OpenOffice.org SVG jar files
+media-gfx/inkscape:sourceview - Enable syntax highlighting support via x11-libs/gtksourceview
+media-gfx/inkscape:svg2 - Enable support for new SVG2 features
+media-gfx/inkscape:visio - Enable support for Microsoft Visio diagrams via media-libs/libvisio
+media-gfx/inkscape:wpg - Enable support for WordPerfect graphics via app-text/libwpg
+media-libs/aubio:double-precision - Compile in double precision mode.
+media-libs/dav1d:10bit - Add support for building 10-bit and 12-bit AV1.
+media-libs/dav1d:8bit - Add support for decoding 8-bit AV1.
+media-libs/dav1d:xxhash - Enable dev-libs/xxhash support for hashing muxer
+media-libs/gst-plugins-bad:bzip2 - Enable bzip2 encoder/decoder plugin
+media-libs/gst-plugins-bad:webrtc - Enable WebRTC audio/video network bin plugin
+media-libs/gst-plugins-base:X - Enable ximagesink and xvimagesink plugins; build GLX platform support if USE=opengl is enabled; build x11 windowing system support if USE=egl is enabled
+media-libs/gst-plugins-base:gbm - Enable Graphics Buffer Manager based EGL windowing system support (requires egl and at least one of gles or opengl)
+media-libs/gst-plugins-base:gles2 - Enable OpenGL library and plugin via GLESv2 API (requires egl)
+media-libs/gst-plugins-base:ivorbis - Enable integer based vorbis decoder
+media-libs/gst-plugins-base:opengl - Enable OpenGL library and plugin via desktop OpenGL API
+media-libs/gst-plugins-base:pango - Enable pango GStreamer plugin
+media-libs/gst-plugins-base:wayland - Enable Wayland EGL windowing system support (requires egl and at least one of gles2 or opengl)
+media-libs/gstreamer:orc - Disable some PaX memory protections to allow plugins that use dev-lang/orc for runtime optimization to be used on hardened PaX systems
+media-libs/gstreamer:unwind - Enable sys-libs/libunwind usage for better backtrace support in leaks tracer module
+media-libs/libavif:aom - Enable support for the AOM codec encoding and decoding
+media-libs/libavif:dav1d - Enable support for the dav1d codec decoding
+media-libs/libavif:extras - Build extra apps (avifenc, avifdec) and test files
+media-libs/libavif:gdk-pixbuf - Build a gdk-pixbuf loader
+media-libs/libavif:rav1e - Enable support for the rav1e codec encoding
+media-libs/libavif:svt-av1 - Enable support for the SVT-AV1 encoder
+media-libs/libheif:aom - Use media-libs/libaom for AVIF encoding/decoding
+media-libs/libheif:gdk-pixbuf - Enable x11-libs/gdk-pixbuf plugin
+media-libs/libheif:go - Enable building dev-lang/go code/examples
+media-libs/libheif:rav1e - Use media-video/rav1e for AVIF encoding
+media-libs/libheif:x265 - Use media-libs/x265 for HEIF encoding
+media-libs/lv2:plugins - Enables examples plugins.
+media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
+media-libs/mesa:gles1 - Enable GLESv1 support.
+media-libs/mesa:gles2 - Enable GLESv2 support.
+media-libs/mesa:llvm - Enable LLVM backend for Gallium3D.
+media-libs/mesa:lm-sensors - Enable Gallium HUD lm-sensors support.
+media-libs/mesa:opencl - Enable the Rusticl Gallium OpenCL state tracker.
+media-libs/mesa:osmesa - Build the Mesa library for off-screen rendering.
+media-libs/mesa:proprietary-codecs - Enable codecs for patent-encumbered audio and video formats.
+media-libs/mesa:vdpau - Enable the VDPAU acceleration interface for the Gallium3D Video Layer.
+media-libs/mesa:vulkan-overlay - Build vulkan-overlay-layer which displays Frames Per Second and other statistics
+media-libs/mesa:wayland - Enable support for dev-libs/wayland
+media-libs/mesa:xa - Enable the XA (X Acceleration) API for Gallium3D.
+media-libs/mesa:zink - Enable the Zink OpenGL-over-Vulkan Gallium driver
+media-libs/oidn:apps - Build the standalone denoise, self test, and benchmark binaries.
+media-libs/oidn:hip - Build OIDN with AMD HIP support.
+media-libs/oidn:openimageio - Enable OpenImageIO Support
+media-libs/openexr:large-stack - Enables code to take advantage of large stack support.
+media-libs/openexr:utils - Build several binary tools for verifying and manipulating EXR files.
+media-libs/openimageio:dicom - Enable DICOM medical image file support via sci-libs/dcmtk
+media-libs/openimageio:fits - Enable support for NASA's sci-libs/cfitsio library
+media-libs/openimageio:gui - Build iv (with Qt5)
+media-libs/openimageio:opencv - Enable OpenCV support via media-libs/opencv
+media-libs/openimageio:openvdb - Enable OpenVDB support via media-gfx/openvdb
+media-libs/openimageio:ptex - Enable Ptex texture mapping system file support via media-libs/ptex
+media-libs/openimageio:qt5 - Build iv with Qt5
+media-libs/openimageio:qt6 - Build iv with Qt6
+media-libs/openimageio:tools - Build the command-line tools
+media-sound/audacity:audiocom - Enable integrated uploading to audio.com
+media-sound/audacity:id3tag - Enables ID3 tagging with id3tag library
+media-sound/audacity:lv2 - Add support for Ladspa V2
+media-sound/audacity:mpg123 - Use media-sound/mpg123-base instead of media-libs/libmad for MPEG decoding
+media-sound/audacity:portmidi - Enable support for MIDI via media-libs/portmidi
+media-sound/audacity:portmixer - Enable the internal portmixer feature
+media-sound/audacity:portsmf - Enable support for Portable Standard Midi File Library
+media-sound/audacity:sbsms - Enables sbsms library support for slower, more accurate pitch and tempo changing
+media-sound/audacity:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
+media-sound/audacity:vamp - Enables vamp plugins support (Audio analysing plugins)
+media-sound/audacity:vst - Enable VST plugin support
+net-im/telegram-desktop:enchant - Use the app-text/enchant spell-checking backend instead of app-text/hunspell
+net-im/telegram-desktop:fonts - Use builtin patched copy of open-sans fonts (overrides fontconfig)
+net-im/telegram-desktop:libdispatch - Use dev-libs/libdispatch to speed up concurrent code execution
+net-im/telegram-desktop:qt6 - Build with Qt6 support
+net-im/telegram-desktop:qt6-imageformats - Add support for HEIF, AVIF and JpegXL by bundling kde-frameworks/kimageformats
+net-im/viber:apulse - Support for PulseAudio emulation for ALSA
+net-misc/ntp:openntpd - Allow ntp to be installed alongside openntpd
+net-misc/ntp:parse-clocks - Add support for PARSE clocks
+net-misc/ntp:samba - Provide support for Samba's signing daemon (needed for Active Directory domain controllers)
+net-misc/rsync:rrsync - Install rrsync script to setup restricted rsync users via ssh logins
+net-misc/rsync:stunnel - Provide helper scripts for using rsync via >=net-misc/stunnel-4
+net-misc/rsync:system-zlib - Use system zlib instead of bundled one. This is incompatible with older rsync releases!
+net-misc/rsync:xxhash - Enable dev-libs/xxhash support for hashing
+net-p2p/qbittorrent:webui - Install qBittorrent Web UI (qbittorrent-nox) and systemd/OpenRC service
+net-p2p/syncthing:tools - Install stdiscosrv, strelaysrv and other tools to /usr/libexec/syncthing/.
+sci-libs/dlib:cblas - Build with CBLAS virtual/cblas
+sci-libs/dlib:cuda - Enable support for CUDA for Deep Neural Networks (cuDNN) on GPU (experimental)
+sci-libs/dlib:mkl - Enable support for Intel FFT sci-libs/mkl
+sci-libs/dlib:python - Enable support for Python API bindings
+sys-cluster/minikube:libvirt - Build plugin for kvm
+www-apps/hugo:extended - Enable SASS/SCSS and WebP encoding support
+x11-libs/pango:X - Build and install the legacy pangoxft library
+x11-libs/pango:examples - Install source code examples
+x11-libs/pango:sysprof - Enable profiling data capture support using dev-util/sysprof-capture

@@ -1,0 +1,10 @@
+DEFINED_PHASES=configure install postinst
+DESCRIPTION=Plain (stupid) text-based todo manager
+EAPI=8
+HOMEPAGE=https://requiescant.tuxfamily.org https://web.archive.org/web/20150912025928/http://requiescant.tuxfamily.org/pages/PAGE20080212T.html
+KEYWORDS=~amd64 ~x86
+LICENSE=public-domain
+RDEPEND=dev-lang/perl
+SLOT=0
+SRC_URI=https://requiescant.tuxfamily.org/tofu-3.5a.tar.bz2
+_md5_=bd2f5639fee9a65f7aa8c6d2ce633b62
