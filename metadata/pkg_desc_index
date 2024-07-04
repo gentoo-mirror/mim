@@ -38,7 +38,7 @@ media-libs/oidn 2.3.0: Intel® Open Image Denoise library
 media-libs/openexr 3.2.4: ILM's OpenEXR high dynamic-range image file format libraries
 media-libs/openimageio 2.5.12.0: A library for reading and writing images
 media-sound/audacity 3.4.2: Free crossplatform audio editor
-net-im/telegram-desktop 5.2.0: Official desktop client for Telegram
+net-im/telegram-desktop 5.2.2: Official desktop client for Telegram
 net-im/viber 21.0.0.1-r1: Free and secure calls and messages to anyone, anywhere
 net-misc/httpie 3.2.2: Modern command line HTTP client
 net-misc/ntp 4.2.8_p18: Network Time Protocol suite/programs
