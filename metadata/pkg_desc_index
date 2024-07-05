@@ -35,6 +35,7 @@ media-libs/libheif 1.15.2: ISO/IEC 23008-12:2017 HEIF file format decoder and en
 media-libs/lv2 1.18.10: A simple but extensible successor of LADSPA
 media-libs/mesa 23.2.1: OpenGL-like graphic library for Linux
 media-libs/oidn 2.3.0: Intel® Open Image Denoise library
+media-libs/opencv 4.10.0: A collection of algorithms and sample code for various computer vision problems
 media-libs/openexr 3.2.4: ILM's OpenEXR high dynamic-range image file format libraries
 media-libs/openimageio 2.5.12.0: A library for reading and writing images
 media-sound/audacity 3.4.2: Free crossplatform audio editor
