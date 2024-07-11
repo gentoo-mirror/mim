@@ -133,7 +133,7 @@ REQUIRED_USE="
 
 RESTRICT="!test? ( test )"
 
-RDEPEND="
+COMMON_DEPEND="
 	avif? ( media-libs/libavif:=[${MULTILIB_USEDEP}] )
 	app-arch/bzip2[${MULTILIB_USEDEP}]
 	dev-libs/protobuf:=[${MULTILIB_USEDEP}]
@@ -164,7 +164,6 @@ RDEPEND="
 		media-libs/libdc1394:=[${MULTILIB_USEDEP}]
 		sys-libs/libraw1394[${MULTILIB_USEDEP}]
 	)
-	java? ( >=virtual/jre-1.8:* )
 	jpeg? ( media-libs/libjpeg-turbo:=[${MULTILIB_USEDEP}] )
 	jpeg2k? (
 		jasper? ( media-libs/jasper:= )
@@ -220,8 +219,12 @@ RDEPEND="
 	webp? ( media-libs/libwebp:=[${MULTILIB_USEDEP}] )
 	xine? ( media-libs/xine-lib )
 "
+RDEPEND="
+	${COMMON_DEPEND}
+	java? ( >=virtual/jre-1.8:* )
+"
 DEPEND="
-	${RDEPEND}
+	${COMMON_DEPEND}
 	eigen? ( >=dev-cpp/eigen-3.3.8-r1:3 )
 	java? ( >=virtual/jdk-1.8:* )
 "
@@ -290,20 +293,18 @@ cuda_get_host_compiler() {
 	done
 
 	if [ ${NVCC_CCBIN} != ${default_compiler} ]; then
-		eerror "Compiler version mismatch causes undefined reference errors on linking."
-		if tc-is-gcc; then
-			eerror "Please switch using gcc-config to ${NVCC_CCBIN} which is supported."
-		else
-			eerror "Please switch to ${NVCC_CCBIN} which is supported."
-		fi
-		die "The default compiler, ${default_compiler} is not supported by nvcc!"
+		ewarn "The default compiler, ${default_compiler} is not supported by nvcc!"
+		ewarn "Compiler version mismatch causes undefined reference errors on linking, so"
+		ewarn "${NVCC_CCBIN}, which is supported by nvcc, will be used to compile OpenCV."
 	fi
 
-	echo "${default_compiler}"
+	echo "${NVCC_CCBIN}"
 }
 
 cuda_get_host_native_arch() {
-	: "${CUDAARCHS:=$(__nvcc_device_query)}"
+	# __nvcc_device_query might fail sporadically,
+	# so a retry is needed for redundancy
+	: "${CUDAARCHS:=$(__nvcc_device_query || __nvcc_device_query || die 'Failed to get CUDA host native arch')}"
 	echo "${CUDAARCHS}"
 }
 
@@ -687,6 +688,8 @@ multilib_src_configure() {
 
 		export CUDAHOSTCXX="$(cuda_get_host_compiler)"
 		export CUDAARCHS="$(cuda_get_host_native_arch)"
+		export CXX="${CUDAHOSTCXX/gcc/g++}"
+		export CC="${CUDAHOSTCXX}"
 
 		einfo "CUDAHOSTCXX: ${CUDAHOSTCXX}"
 		einfo "CUDAARCHS: ${CUDAARCHS}"
