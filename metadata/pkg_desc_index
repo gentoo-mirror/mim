@@ -1,3 +1,4 @@
+acct-user/portage 0-r3: System user: portage
 app-admin/pydf 12-r2: Enhanced df with colors
 app-arch/libdeflate 1.20: Heavily optimized DEFLATE/zlib/gzip (de)compression
 app-benchmarks/glmark2 2023.01: glmark2 is an OpenGL 2.0 and ES 2.0 benchmark
