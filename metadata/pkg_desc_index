@@ -42,7 +42,7 @@ media-libs/openimageio 2.5.13.0: A library for reading and writing images
 media-sound/audacity 3.4.2: Free crossplatform audio editor
 net-im/telegram-desktop 5.2.3: Official desktop client for Telegram
 net-im/viber 21.0.0.1-r1: Free and secure calls and messages to anyone, anywhere
-net-misc/httpie 3.2.2: Modern command line HTTP client
+net-misc/httpie 3.2.3: Modern command line HTTP client
 net-misc/ntp 4.2.8_p18: Network Time Protocol suite/programs
 net-misc/rsync 3.2.7-r2: File transfer program to keep remote files into sync
 net-p2p/qbittorrent 4.6.2: BitTorrent client in C++ and Qt
