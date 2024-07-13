@@ -12,6 +12,8 @@ app-benchmarks/glmark2:gles2 - Enable GLES2 support
 dev-lang/zig:llvm - Build with LLVM backend and extensions enabled.
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
 dev-libs/imath:large-stack - Enables code to take advantage of large stack support
+dev-libs/re2:benchmark - Build a benchmark binary, install it as re2-bench
+dev-libs/re2:test-full - Run additional, quite slow tests
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
 dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
 dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries

@@ -14,6 +14,7 @@ dev-libs/bemenu 0.6.21: dmenu clone for wayland
 dev-libs/gobject-introspection 1.78.1: Introspection system for GObject-based libraries
 dev-libs/imath 3.1.11: Imath basic math package
 dev-libs/protobuf 27.1: Google's Protocol Buffers - Extensible mechanism for serializing structured data
+dev-libs/re2 0.2024.07.02: An efficient, principled regular expression library
 dev-python/js2py 0.74-r1: JavaScript to Python Translator & JavaScript interpreter in Python
 dev-util/android-tools 34.0.5: Android platform tools (adb, fastboot, and mkbootimg)
 dev-util/diffuse 0.9.0: A graphical tool for comparing and merging text files
