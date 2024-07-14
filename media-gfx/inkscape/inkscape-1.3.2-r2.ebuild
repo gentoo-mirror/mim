@@ -3,11 +3,12 @@
 
 EAPI=8
 
-PYTHON_COMPAT=( python3_{10..12} )
+PYTHON_COMPAT=( python3_{10..13} )
 PYTHON_REQ_USE="xml(+)"
-MY_P="${P/_/}"
+
 inherit cmake flag-o-matic xdg toolchain-funcs python-single-r1
 
+MY_P="${P/_/}"
 DESCRIPTION="SVG based generic vector-drawing program"
 HOMEPAGE="https://inkscape.org/ https://gitlab.com/inkscape/inkscape/"
 
@@ -25,8 +26,7 @@ LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
 IUSE="cdr dia exif graphicsmagick imagemagick inkjar jpeg openmp postscript readline sourceview spell svg2 test visio wpg X"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
-# Lots of test failures which need investigating, bug #871621
-RESTRICT="!test? ( test ) test"
+RESTRICT="!test? ( test )"
 
 BDEPEND="
 	dev-util/glib-utils
@@ -63,8 +63,10 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		dev-python/appdirs[${PYTHON_USEDEP}]
 		dev-python/cachecontrol[${PYTHON_USEDEP}]
 		dev-python/cssselect[${PYTHON_USEDEP}]
+		dev-python/filelock[${PYTHON_USEDEP}]
 		dev-python/lockfile[${PYTHON_USEDEP}]
 		dev-python/lxml[${PYTHON_USEDEP}]
+		dev-python/pillow[jpeg?,tiff,webp,${PYTHON_USEDEP}]
 		media-gfx/scour[${PYTHON_USEDEP}]
 	')
 	cdr? (
@@ -107,7 +109,11 @@ DEPEND="${COMMON_DEPEND}
 "
 
 PATCHES=(
-	"${FILESDIR}"/${PN}-1.3.2-libxml2-2.12.patch
+	"${FILESDIR}"/${P}-libxml2-2.12.patch
+	"${FILESDIR}"/${P}-poppler-24.03.patch
+	"${FILESDIR}"/${P}-poppler-24.05.patch # bug 931917
+	"${FILESDIR}"/${P}-cxx20.patch # bug 931917
+	"${FILESDIR}"/${P}-cxx20-2.patch # bug 933216
 )
 
 pkg_pretend() {
@@ -134,7 +140,9 @@ src_prepare() {
 }
 
 src_configure() {
-	# aliasing unsafe wrt #310393
+	# ODR violation (https://gitlab.com/inkscape/lib2geom/-/issues/71, bug #859628)
+	filter-lto
+	# Aliasing unsafe (bug #310393)
 	append-flags -fno-strict-aliasing
 
 	local mycmakeargs=(
@@ -167,21 +175,17 @@ src_configure() {
 
 src_test() {
 	CMAKE_SKIP_TESTS=(
-		# render_text*: needs patched Cairo / maybe upstream changes
-		# not yet in a release.
 		# test_lpe/test_lpe64: precision differences b/c of new GCC?
 		# cli_export-png-color-mode-gray-8_png_check_output: ditto?
-		render_test-use
-		render_test-glyph-y-pos
-		render_text-glyphs-combining
-		render_text-glyphs-vertical
-		render_test-rtl-vertical
+		cli_convert-text-paintorder_check_output
+		cli_export-png-color-mode-gray-8_png_check_output
+		cli_export-text-paintorder_check_output
+		cli_pdfinput-font-spacing_check_output
+		cli_pdfinput-font-style_check_output
 		test_lpe
 		test_lpe64
-		cli_export-png-color-mode-gray-8_png_check_output
 	)
 
-	# bug #871621
 	cmake_src_compile tests
 	cmake_src_test -j1
 }
@@ -190,14 +194,12 @@ src_install() {
 	cmake_src_install
 
 	find "${ED}" -type f -name "*.la" -delete || die
-
 	find "${ED}"/usr/share/man -type f -maxdepth 3 -name '*.bz2' -exec bzip2 -d {} \; || die
-
 	find "${ED}"/usr/share/man -type f -maxdepth 3 -name '*.gz' -exec gzip -d {} \; || die
 
 	local extdir="${ED}"/usr/share/${PN}/extensions
-
 	if [[ -e "${extdir}" ]] && [[ -n $(find "${extdir}" -mindepth 1) ]]; then
+		python_fix_shebang "${ED}"/usr/share/${PN}/extensions
 		python_optimize "${ED}"/usr/share/${PN}/extensions
 	fi
 
