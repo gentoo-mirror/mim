@@ -156,6 +156,8 @@ sci-libs/dlib:cblas - Build with CBLAS virtual/cblas
 sci-libs/dlib:cuda - Enable support for CUDA for Deep Neural Networks (cuDNN) on GPU (experimental)
 sci-libs/dlib:mkl - Enable support for Intel FFT sci-libs/mkl
 sci-libs/dlib:python - Enable support for Python API bindings
+sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
+sci-libs/gsl:deprecated - Enable deprecated functions
 sys-cluster/minikube:libvirt - Build plugin for kvm
 www-apps/hugo:extended - Enable SASS/SCSS and WebP encoding support
 x11-libs/pango:X - Build and install the legacy pangoxft library
