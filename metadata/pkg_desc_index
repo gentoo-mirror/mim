@@ -52,6 +52,7 @@ sci-geosciences/googleearth 7.3.6.9796: A 3D interface to the planet
 sci-libs/dlib 19.24.4: Numerical and networking C++ library
 sci-libs/gsl 2.8: The GNU Scientific Library
 sys-apps/eza 0.18.19: A modern, maintained replacement for ls
+sys-apps/hwloc 2.11.1: Displays the hardware topology in convenient formats
 sys-cluster/minikube 1.32.0: Single Node Kubernetes Cluster
 sys-cluster/pmix 5.0.3: The Process Management Interface (PMI) Exascale
 sys-power/acpilight 1.2-r4: Replacement for xbacklight that uses the ACPI interface to set brightness

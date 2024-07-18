@@ -158,6 +158,15 @@ sci-libs/dlib:mkl - Enable support for Intel FFT sci-libs/mkl
 sci-libs/dlib:python - Enable support for Python API bindings
 sci-libs/gsl:cblas-external - Link gsl with external cblas provided by (virtual/cblas) instead of shipped internal version
 sci-libs/gsl:deprecated - Enable deprecated functions
+sys-apps/hwloc:X - use the X Window System
+sys-apps/hwloc:cairo - Enable the Cairo back-end of hwloc's lstopo command
+sys-apps/hwloc:cpuid - Enable the cpuid-based architecture specific support (x86 component)
+sys-apps/hwloc:cuda - Enable CUDA device discovery using libcudart
+sys-apps/hwloc:l0 - Enable oneAPI Level Zero device discovery
+sys-apps/hwloc:nvml - Enable the NVML device discovery
+sys-apps/hwloc:pci - Enable PCI device discovery using libpci
+sys-apps/hwloc:rocm - Enable AMD RSMI device discovery
+sys-apps/hwloc:xml - use libxml2 for XML support, instead of a custom minimalistic support
 sys-cluster/minikube:libvirt - Build plugin for kvm
 sys-cluster/pmix:munge - Enable authentication via munge
 sys-cluster/pmix:pmi - Build PMI1 and PMI2 interface
