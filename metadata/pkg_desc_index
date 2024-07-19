@@ -9,6 +9,7 @@ app-text/vale 3.5.0: A syntax-aware linter for prose built with speed and extens
 dev-build/meson 1.4.1: Open source build system
 dev-cpp/abseil-cpp 20240116.2: Abseil Common Libraries (C++), LTS Branch
 dev-cpp/cppgir 2.0_p20240315: GObject-Introspection C++ binding wrapper generator
+dev-db/mysql-connector-c 8.0.38: C client library for MariaDB/MySQL
 dev-lang/zig 0.13.0: A robust, optimal, and maintainable programming language
 dev-libs/bemenu 0.6.21: dmenu clone for wayland
 dev-libs/gobject-introspection 1.78.1: Introspection system for GObject-based libraries
