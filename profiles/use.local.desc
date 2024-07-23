@@ -70,6 +70,16 @@ media-libs/libheif:gdk-pixbuf - Enable x11-libs/gdk-pixbuf plugin
 media-libs/libheif:go - Enable building dev-lang/go code/examples
 media-libs/libheif:rav1e - Use media-video/rav1e for AVIF encoding
 media-libs/libheif:x265 - Use media-libs/x265 for HEIF encoding
+media-libs/libsdl2:fcitx4 - Enable support for app-i18n/fcitx 4
+media-libs/libsdl2:gles1 - include OpenGL ES 1.0 support
+media-libs/libsdl2:haptic - Enable the haptic (force feedback) subsystem
+media-libs/libsdl2:ibus - Enable support for app-i18n/ibus
+media-libs/libsdl2:joystick - Control joystick support (disable at your own risk)
+media-libs/libsdl2:kms - Build the KMSDRM video driver
+media-libs/libsdl2:pipewire - Enable support for the media-video/pipewire audio backend
+media-libs/libsdl2:sndio - Enable support for the media-sound/sndio backend
+media-libs/libsdl2:sound - Control audio support (disable at your own risk)
+media-libs/libsdl2:video - Control video support (disable at your own risk)
 media-libs/lv2:plugins - Enables examples plugins.
 media-libs/mesa:d3d9 - Enable Direct 3D9 API through Nine state tracker. Can be used together with patched wine.
 media-libs/mesa:gles1 - Enable GLESv1 support.
