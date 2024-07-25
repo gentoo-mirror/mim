@@ -37,6 +37,13 @@ gui-libs/gtk:cloudproviders - Enable GtkPlacesSidebar to access cloud services
 gui-libs/gtk:colord - Use x11-misc/colord for color management in printing
 gui-libs/gtk:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
 mail-client/aerc:notmuch - Enable support for net-mail/notmuch
+media-gfx/imagemagick:corefonts - Use media-fonts/corefonts which is required by some commands
+media-gfx/imagemagick:fpx - Enable media-libs/libfpx support
+media-gfx/imagemagick:hdri - Enable High Dynamic Range Images formats
+media-gfx/imagemagick:lqr - Enable experimental liquid rescale support using media-libs/liblqr
+media-gfx/imagemagick:pango - Enable Pango support using x11-libs/pango
+media-gfx/imagemagick:q32 - Set quantum depth value to 32
+media-gfx/imagemagick:q8 - Set quantum depth value to 8
 media-gfx/inkscape:cdr - Enable support for CorelDRAW files via media-libs/libcdr
 media-gfx/inkscape:dia - Enable DIA flow chart import via app-office/dia
 media-gfx/inkscape:inkjar - Enable support for OpenOffice.org SVG jar files
