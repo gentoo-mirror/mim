@@ -14,6 +14,14 @@ dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating do
 dev-libs/imath:large-stack - Enables code to take advantage of large stack support
 dev-libs/re2:benchmark - Build a benchmark binary, install it as re2-bench
 dev-libs/re2:test-full - Run additional, quite slow tests
+dev-qt/qtwebengine:designer - Install the QWebEngineView plugin used to add widgets in dev-qt/designer forms that display web pages.
+dev-qt/qtwebengine:jumbo-build - Combine source files to speed up build process.
+dev-qt/qtwebengine:pdfium - Build the QtPdf module based on chromium's PDFium library
+dev-qt/qtwebengine:qml - Build QML/QtQuick bindings and imports
+dev-qt/qtwebengine:system-icu - Use the system-wide dev-libs/icu instead of bundled.
+dev-qt/qtwebengine:system-re2 - Use the system-wide dev-libs/re2 instead of bundled.
+dev-qt/qtwebengine:webdriver - Build tool for automated testing (ChromeDriver equivalent)
+dev-qt/qtwebengine:widgets - Enable QtWidgets support
 dev-util/nvidia-cuda-toolkit:debugger - Install the CUDA debugger
 dev-util/nvidia-cuda-toolkit:nsight - Install profiling and optimizing tools (nsight-compute, nsight-systems)
 dev-util/nvidia-cuda-toolkit:profiler - Install the NVIDIA CUDA profiler (nvprof) and the related libraries
