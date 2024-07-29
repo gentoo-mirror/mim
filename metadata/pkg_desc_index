@@ -22,6 +22,7 @@ dev-util/android-tools 34.0.5: Android platform tools (adb, fastboot, and mkboot
 dev-util/diffuse 0.9.0: A graphical tool for comparing and merging text files
 dev-util/nvidia-cuda-toolkit 12.4.1: NVIDIA CUDA Toolkit (compiler and friends)
 dev-vcs/git 2.44.0: Stupid content tracker: distributed VCS designed for speed and efficiency
+games-emulation/snes9x 1.63: Super Nintendo Entertainment System (SNES) emulator
 games-emulation/zsnes 2.0.12: Fork of the classic Super Nintendo emulator
 games-strategy/dunelegacy 0.97.02: Updated clone of Westood Studios' Dune II
 gui-apps/wf-recorder 0.4.1: Screen recorder for wlroots-based compositors
