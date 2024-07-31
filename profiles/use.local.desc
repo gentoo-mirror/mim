@@ -199,6 +199,8 @@ sys-cluster/minikube:libvirt - Build plugin for kvm
 sys-cluster/pmix:munge - Enable authentication via munge
 sys-cluster/pmix:pmi - Build PMI1 and PMI2 interface
 www-apps/hugo:extended - Enable SASS/SCSS and WebP encoding support
+www-client/lynx:gnutls - Use gnutls library for HTTPS support (openssl is the default library for HTTPS support).
+www-client/lynx:ssl - Enable HTTPS support.
 x11-libs/pango:X - Build and install the legacy pangoxft library
 x11-libs/pango:examples - Install source code examples
 x11-libs/pango:sysprof - Enable profiling data capture support using dev-util/sysprof-capture
