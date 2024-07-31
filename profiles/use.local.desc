@@ -41,6 +41,7 @@ dev-vcs/git:tk - Include the 'gitk' and 'git gui' tools
 dev-vcs/git:webdav - Adds support for push'ing to HTTP/HTTPS repositories via DAV
 games-emulation/snes9x:libretro - Build libretro port
 games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recommended)
+gui-apps/swaybg:gdk-pixbuf - Support image types other than PNG
 gui-apps/wf-recorder:pulseaudio - Enable support for audio capture via PulseAudio
 gui-libs/gtk:broadway - Enable the GDK Broadway backend.
 gui-libs/gtk:cloudproviders - Enable GtkPlacesSidebar to access cloud services
