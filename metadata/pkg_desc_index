@@ -15,7 +15,7 @@ dev-libs/bemenu 0.6.21: dmenu clone for wayland
 dev-libs/gobject-introspection 1.78.1: Introspection system for GObject-based libraries
 dev-libs/imath 3.1.11: Imath basic math package
 dev-libs/protobuf 27.1: Google's Protocol Buffers - Extensible mechanism for serializing structured data
-dev-libs/re2 0.2024.07.02: An efficient, principled regular expression library
+dev-libs/re2 0.2024.07.02-r1: An efficient, principled regular expression library
 dev-python/js2py 0.74-r1: JavaScript to Python Translator & JavaScript interpreter in Python
 dev-qt/qtwebengine 5.15.14_p20240510: Library for rendering dynamic web content in Qt5 C++ and QML applications
 dev-util/android-tools 34.0.5: Android platform tools (adb, fastboot, and mkbootimg)
