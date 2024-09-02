@@ -25,6 +25,7 @@ dev-vcs/git 2.44.0: Stupid content tracker: distributed VCS designed for speed a
 games-emulation/snes9x 1.63: Super Nintendo Entertainment System (SNES) emulator
 games-emulation/zsnes 2.0.12: Fork of the classic Super Nintendo emulator
 games-strategy/dunelegacy 0.97.02: Updated clone of Westood Studios' Dune II
+gnome-base/librsvg 2.58.3: Scalable Vector Graphics (SVG) rendering library
 gui-apps/swaybg 1.2.1: A wallpaper utility for Wayland
 gui-apps/wf-recorder 0.4.1: Screen recorder for wlroots-based compositors
 gui-libs/gtk 4.14.3: GTK is a multi-platform toolkit for creating graphical user interfaces
