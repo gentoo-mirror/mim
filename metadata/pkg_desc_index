@@ -8,6 +8,7 @@ app-shells/fish 3.7.1: Friendly Interactive SHell
 app-text/vale 3.5.0: A syntax-aware linter for prose built with speed and extensibility in mind
 dev-build/meson 1.4.1: Open source build system
 dev-cpp/abseil-cpp 20240116.2: Abseil Common Libraries (C++), LTS Branch
+dev-cpp/ada 2.9.2: WHATWG-compliant and fast URL parser written in modern C++
 dev-cpp/cppgir 2.0_p20240315: GObject-Introspection C++ binding wrapper generator
 dev-db/mysql-connector-c 8.0.39: C client library for MariaDB/MySQL
 dev-lang/zig 0.13.0: A robust, optimal, and maintainable programming language
