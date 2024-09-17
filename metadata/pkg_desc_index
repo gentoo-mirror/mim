@@ -58,7 +58,7 @@ net-misc/httpie 3.2.3: Modern command line HTTP client
 net-misc/ntp 4.2.8_p18: Network Time Protocol suite/programs
 net-misc/rsync 3.2.7-r2: File transfer program to keep remote files into sync
 net-p2p/qbittorrent 4.6.2: BitTorrent client in C++ and Qt
-net-p2p/syncthing 1.27.10: Open Source Continuous File Synchronization
+net-p2p/syncthing 1.27.12: Open Source Continuous File Synchronization
 sci-geosciences/googleearth 7.3.6.9796: A 3D interface to the planet
 sci-libs/dlib 19.24.4: Numerical and networking C++ library
 sci-libs/gsl 2.8: The GNU Scientific Library
