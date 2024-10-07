@@ -17,6 +17,7 @@ dev-libs/gobject-introspection 1.78.1: Introspection system for GObject-based li
 dev-libs/imath 3.1.11: Imath basic math package
 dev-libs/protobuf 27.1: Google's Protocol Buffers - Extensible mechanism for serializing structured data
 dev-libs/re2 0.2024.07.02-r1: An efficient, principled regular expression library
+dev-php/xdebug 3.3.2: A PHP debugging and profiling extension
 dev-python/js2py 0.74-r1: JavaScript to Python Translator & JavaScript interpreter in Python
 dev-qt/qtwebengine 5.15.14_p20240510: Library for rendering dynamic web content in Qt5 C++ and QML applications
 dev-util/android-tools 35.0.1: Android platform tools (adb, fastboot, and mkbootimg)
