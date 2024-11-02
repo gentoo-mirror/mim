@@ -10,6 +10,7 @@ dev-build/meson 1.4.1: Open source build system
 dev-cpp/abseil-cpp 20240116.2: Abseil Common Libraries (C++), LTS Branch
 dev-cpp/ada 2.9.2: WHATWG-compliant and fast URL parser written in modern C++
 dev-cpp/cppgir 2.0_p20240315: GObject-Introspection C++ binding wrapper generator
+dev-cpp/ms-gsl 4.1.0: Guideline Support Library implementation by Microsoft
 dev-db/mysql-connector-c 8.0.39: C client library for MariaDB/MySQL
 dev-lang/zig 0.13.0: A robust, optimal, and maintainable programming language
 dev-libs/bemenu 0.6.23: dmenu clone for wayland
