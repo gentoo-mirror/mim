@@ -10,6 +10,7 @@ app-arch/libdeflate:zlib - Support the zlib format
 app-benchmarks/glmark2:drm - Enable DRM backend support
 app-benchmarks/glmark2:gles2 - Enable GLES2 support
 dev-lang/zig:llvm - Build with LLVM backend and extensions enabled.
+dev-libs/appstream-glib:fonts - Enable fonts support for appstream-builder.
 dev-libs/gobject-introspection:doctool - Install g-ir-doc-tool for generating documentation from introspected data
 dev-libs/imath:large-stack - Enables code to take advantage of large stack support
 dev-libs/re2:benchmark - Build a benchmark binary, install it as re2-bench

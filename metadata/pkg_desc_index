@@ -13,6 +13,7 @@ dev-cpp/cppgir 2.0_p20240315: GObject-Introspection C++ binding wrapper generato
 dev-cpp/ms-gsl 4.1.0: Guideline Support Library implementation by Microsoft
 dev-db/mysql-connector-c 8.0.39: C client library for MariaDB/MySQL
 dev-lang/zig 0.13.0: A robust, optimal, and maintainable programming language
+dev-libs/appstream-glib 0.8.3: Provides GObjects and helper methods to read and write AppStream metadata
 dev-libs/bemenu 0.6.23: dmenu clone for wayland
 dev-libs/gobject-introspection 1.78.1: Introspection system for GObject-based libraries
 dev-libs/imath 3.1.11: Imath basic math package
