@@ -12,5 +12,5 @@ RDEPEND=dev-libs/boost:= dev-libs/libfmt:=
 RESTRICT=!test? ( test )
 SLOT=0
 SRC_URI=https://gitlab.com/mnauw/cppgir/-/archive/1cde1aaa0696ab7989f512abdb0694614ffe8d87/cppgir-1cde1aaa0696ab7989f512abdb0694614ffe8d87.tar.bz2 -> cppgir-2.0_p20240315.tar.bz2
-_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	e8de74bac929ba17427e740e95707d00	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
+_eclasses_=toolchain-funcs	f9d71a6efe9d083aec750dd13968e169	flag-o-matic	b892042b2667b8ac69ec8a2571dc290a	multiprocessing	1e32df7deee68372153dca65f4a7c21f	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	42869b3c8d86a70ef3cf75165a395e09	cmake	b05c1b7b3c9213c155f128f4eadaa49f
 _md5_=7de33132941191b3eb3ca4fae7fd8eb7
