@@ -45,7 +45,7 @@ media-libs/gst-plugins-bad 1.24.4: Less plugins for GStreamer
 media-libs/gst-plugins-base 1.24.4: Basepack of plugins for gstreamer
 media-libs/gstreamer 1.24.4: Open source multimedia framework
 media-libs/libaom 3.9.1: Alliance for Open Media AV1 Codec SDK
-media-libs/libavif 1.1.1: Library for encoding and decoding .avif files
+media-libs/libavif 1.3.0: Library for encoding and decoding .avif files
 media-libs/libheif 1.15.2: ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 media-libs/libsdl2 2.30.6: Simple Direct Media Layer
 media-libs/lv2 1.18.10: A simple but extensible successor of LADSPA
