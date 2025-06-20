@@ -53,7 +53,7 @@ media-libs/mesa 23.2.1: OpenGL-like graphic library for Linux
 media-libs/oidn 2.3.0: Intel® Open Image Denoise library
 media-libs/opencv 4.10.0: A collection of algorithms and sample code for various computer vision problems
 media-libs/openexr 3.2.4: ILM's OpenEXR high dynamic-range image file format libraries
-media-libs/openimageio 2.5.13.0: A library for reading and writing images
+media-libs/openimageio 3.0.7.0: A library for reading and writing images
 media-sound/audacity 3.4.2: Free crossplatform audio editor
 net-im/telegram-desktop 5.15.2: Official desktop client for Telegram
 net-im/viber 21.0.0.1-r1: Free and secure calls and messages to anyone, anywhere
