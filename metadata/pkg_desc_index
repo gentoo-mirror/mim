@@ -54,7 +54,7 @@ media-libs/oidn 2.3.0: Intel® Open Image Denoise library
 media-libs/opencv 4.10.0: A collection of algorithms and sample code for various computer vision problems
 media-libs/openexr 3.2.4: ILM's OpenEXR high dynamic-range image file format libraries
 media-libs/openimageio 3.0.7.0: A library for reading and writing images
-media-sound/audacity 3.4.2: Free crossplatform audio editor
+media-sound/audacity 3.7.4: Free crossplatform audio editor
 net-im/telegram-desktop 5.16.1: Official desktop client for Telegram
 net-im/viber 21.0.0.1-r1: Free and secure calls and messages to anyone, anywhere
 net-misc/httpie 3.2.3: Modern command line HTTP client
@@ -71,6 +71,7 @@ sys-cluster/minikube 1.32.0: Single Node Kubernetes Cluster
 sys-cluster/pmix 5.0.3: The Process Management Interface (PMI) Exascale
 sys-power/acpilight 1.2-r4: Replacement for xbacklight that uses the ACPI interface to set brightness
 www-apps/hugo 0.131.0: Fast static HTML and CSS website generator
+www-client/google-chrome 138.0.7204.100: The web browser from Google
 www-client/lynx 2.9.2: An excellent console-based web browser with ssl support
 x11-libs/gdk-pixbuf 2.42.12: Image loading library for GTK+
 x11-libs/pango 1.54.0: Internationalized text layout and rendering library
