@@ -163,6 +163,11 @@ media-sound/audacity:portmixer - Enable the internal portmixer feature
 media-sound/audacity:sbsms - Enable slower, more accurate pitch and tempo changing via media-libs/libsbsms
 media-sound/audacity:twolame - Enable twolame support (MPEG Audio Layer 2 encoder) via media-sound/twolame
 media-sound/audacity:vamp - Enable vamp plugins support (Audio analysing plugins)
+media-sound/lmms:fluidsynth - Enables Fluidsynth MIDI software synthesis plugin.
+media-sound/lmms:libgig - Enables GIG player plugin.
+media-sound/lmms:soundio - Enables libsoundio support.
+media-sound/lmms:stk - Enables STK Mallet plugin.
+media-sound/lmms:vst - Enables the VeSTige plugin to run VST plugins through Wine.
 net-im/telegram-desktop:enchant - Use the app-text/enchant spell-checking backend instead of app-text/hunspell
 net-im/telegram-desktop:fonts - Use builtin patched copy of open-sans fonts (overrides fontconfig)
 net-im/telegram-desktop:libdispatch - Use dev-libs/libdispatch to speed up concurrent code execution

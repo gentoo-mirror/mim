@@ -55,6 +55,7 @@ media-libs/opencv 4.10.0: A collection of algorithms and sample code for various
 media-libs/openexr 3.2.4: ILM's OpenEXR high dynamic-range image file format libraries
 media-libs/openimageio 3.0.7.0: A library for reading and writing images
 media-sound/audacity 3.7.4: Free crossplatform audio editor
+media-sound/lmms 1.2.2-r3: Cross-platform music production software
 net-im/telegram-desktop 5.16.1: Official desktop client for Telegram
 net-im/viber 21.0.0.1-r1: Free and secure calls and messages to anyone, anywhere
 net-misc/httpie 3.2.3: Modern command line HTTP client
